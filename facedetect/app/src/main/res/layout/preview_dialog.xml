@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280px"
+    android:layout_height="720px"
+    android:background="#000000" >
+
+
+
+    <com.serenegiant.widget.Preview
+        android:id="@+id/surfaceView"
+        android:layout_width="1280px"
+        android:layout_height="720px"
+        android:background="@android:color/transparent" />
+
+    <!-- <FrameLayout -->
+    <!-- android:id="@+id/surfaceView" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:background="@android:color/transparent" > -->
+    <!-- </FrameLayout> -->
+
+    <ImageView
+        android:id="@+id/camera_image"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_gravity="right"
+        android:contentDescription="@string/camera"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_camera" />
+<!--     <View -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:background="@android:color/black" /> -->
+</FrameLayout>
