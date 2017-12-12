@@ -11,9 +11,14 @@ android {
 
         ndk {
             moduleName "UVCCamera"
+            abiFilters "armeabi-v7a"
         }
     }
-
+    externalNativeBuild {
+        ndkBuild {
+            path "src/main/jni/Android.mk"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false

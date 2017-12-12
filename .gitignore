@@ -60,4 +60,7 @@ freeline_project_description.json
 *.a
 *.so
 
+*.exvim
+*.exvim.*
+
 
