@@ -1,0 +1,307 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Header_btn_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">Test</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:textColor">@color/header_btn</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="Common_lm_hw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Common_lm_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Common_ll_mw_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Common_editText_ls">
+        <item name="android:layout_marginLeft">@dimen/common_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/common_marginRight</item>
+        <item name="android:background">@drawable/bg_input_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Common_editText_he">
+        <item name="android:background">@drawable/bg_input_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/address_input_height</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Common_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_line_height</item>
+        <item name="android:background">@color/common_line</item>
+    </style>
+<style name="Common_textView_style_size_minute">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_text_color</item>
+        <item name="android:textSize">@dimen/common_subscript_text_size</item>
+    </style>
+    
+    <style name="Common_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_texthightlight_color</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+    </style>
+
+    <style name="Common_textview_style_allcommon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_text_color</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+    </style>
+    
+    <style name="Common_textview_style_size_plus">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_text_color</item>
+        <item name="android:textSize">@dimen/common_textpluss_size</item>
+    </style>
+    
+    <style name="Common_textview_style_size_plus_cb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/common_textpluss_size</item>
+    </style>
+
+    <style name="Common_redbtn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_loginbtn_height</item>
+        <item name="android:layout_marginLeft">@dimen/common_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_margin</item>
+        <item name="android:background">@drawable/bg_corner_border_red</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+    </style>
+
+    <style name="Common_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/common_margin</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Dialog_commontext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+        <item name="android:textColor">@color/common_text_color</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 除去title -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- 除去背景色 -->
+    </style>
+
+    <style name="Dialog_innout" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="Forgot_vfItems_ll">
+        <item name="android:layout_width">120dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textSize">@dimen/forgot_text_size</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/common_margin</item>
+        <item name="android:background">@drawable/bg_dialog_btn</item>
+    </style>
+
+    <style name="Login_edt_pl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_input_height</item>
+        <item name="android:layout_marginBottom">@dimen/common_margin</item>
+        <item name="android:layout_marginTop">@dimen/common_margin</item>
+        <item name="android:layout_marginLeft">@dimen/common_marginLeft_thin</item>
+        <item name="android:layout_marginRight">@dimen/common_marginRight_thin</item>
+        <item name="android:textColorHint">@color/common_hint</item>
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Login_tvo_pl">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/bg_tv_url_like</item>
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Login_authLogin_pl">
+        <item name="android:layout_width">90dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">25dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Login_authLoginInner_pl">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+    </style>
+
+    <style name="Regist_editText_ls_thin">
+        <item name="android:layout_marginLeft">@dimen/regist_margin</item>
+        <item name="android:layout_marginRight">@dimen/regist_margin</item>
+        <item name="android:background">@drawable/bg_input_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Regist_editText_selfls">
+        <item name="android:layout_marginLeft">@dimen/common_marginLeft_thin</item>
+        <item name="android:layout_marginRight">@dimen/common_marginRight_thin</item>
+        <item name="android:layout_marginTop">@dimen/common_margin_upndown</item>
+        <item name="android:layout_marginBottom">@dimen/common_margin_upndown</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_input_height</item>
+        <item name="android:textColorHint">@color/common_hint</item>
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Goodsov_Inof_detail">
+        <item name="android:background">@drawable/bg_input_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Goodsov_Inof_tripleordouble_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/goodsov_padding_und</item>
+        <item name="android:paddingBottom">@dimen/goodsov_padding_und</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Goodsov_Inof_detail_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/common_margin_split</item>
+        <item name="android:paddingBottom">@dimen/common_margin_split</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/common_margin</item>
+    </style>
+
+    <style name="tabs_display_betweenupanddown">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">@dimen/common_margin</item>
+    </style>
+
+    <style name="switchview_defaultstyle">
+        <item name="android:layout_width">@dimen/switchview_width</item>
+        <item name="android:layout_height">@dimen/switchview_height</item>
+        <item name="android:paddingLeft">@dimen/switchview_padding</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="list_action_bar_text_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="list_ordergoods_imgs_style">
+        <item name="android:layout_width">@dimen/ordergoods_img_width</item>
+        <item name="android:layout_height">@dimen/ordergoods_img_height</item>
+        <item name="android:paddingLeft">@dimen/common_margin</item>
+    </style>
+
+    <style name="item_vercher_text">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">@dimen/vercher_item_height</item>
+        <item name="android:layout_weight">1.8</item>
+    </style>
+
+    <style name="item_vercher_img">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">@dimen/vercher_item_height</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="item_vercher_word_up">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/vercher_item_texttitle</item>
+        <item name="android:layout_marginTop">@dimen/vercher_item_marginbottom</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="item_vercher_word_down">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/vercher_item_textdetail</item>
+        <item name="android:layout_marginBottom">@dimen/vercher_item_marginbottom</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="item_cartgoodsminutesandplus">
+        <item name="android:layout_width">@dimen/counter_rectangle_size</item>
+        <item name="android:layout_height">@dimen/counter_rectangle_size</item>
+        <item name="android:background">@drawable/bg_common_btn</item>
+    </style>
+
+    <style name="item_images_left">
+        <item name="android:layout_width">@dimen/good_icon_size</item>
+        <item name="android:layout_height">@dimen/good_icon_size</item>
+        <item name="android:background">@drawable/bg_common_btn</item>
+        <item name="android:src">@drawable/loading</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="listview_onselector">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:listSelector">#00000000</item>
+    </style>
+</resources>

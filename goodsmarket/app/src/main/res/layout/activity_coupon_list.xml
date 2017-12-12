@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/common_margin"
+        android:text="@string/coupon_userguide_tips"
+        android:textColor="@color/graythin"
+        android:textSize="@dimen/common_text_size" />
+
+    <View style="@style/Common_line_style" />
+
+    <LinearLayout
+        android:id="@+id/ll_coupon_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_margin"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/edt_coupon_numberSigned"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/bg_rededittext"
+            android:hint="@string/coupon_userguide_inputtips"
+            android:paddingLeft="5dip"
+            android:textColorHint="@color/graythin" />
+
+        <Button
+            android:id="@+id/btn_coupon_add_ensure"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_redbuttonshape"
+            android:padding="@dimen/common_margin"
+            android:text="@string/coupon_button_ensure"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_couponlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+    <declare-styleable name="ToolBar"> 
+        <attr name="paddingImage" format="integer"/> 
+        <attr name="siblingImage" format="reference|color"/> 
+    </declare-styleable> 
+</resources>

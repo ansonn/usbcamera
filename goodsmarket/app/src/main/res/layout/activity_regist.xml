@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <RelativeLayout
+        style="@style/Regist_editText_ls_thin"
+        android:layout_marginBottom="@dimen/regist_margin"
+        android:layout_marginTop="@dimen/regist_marginTop" >
+
+        <EditText
+            android:id="@+id/edt_signname"
+            style="@style/Regist_editText_selfls"
+            android:hint="@string/regist_username" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Regist_editText_ls_thin"
+        android:layout_marginBottom="@dimen/regist_margin" >
+
+        <EditText
+            android:id="@+id/edt_signpassword"
+            style="@style/Regist_editText_selfls"
+            android:hint="@string/regist_password"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Regist_editText_ls_thin"
+        android:layout_marginBottom="@dimen/regist_margin" >
+
+        <EditText
+            android:id="@+id/edt_signeemail"
+            style="@style/Regist_editText_selfls"
+            android:hint="@string/regist_email"
+            android:inputType="textEmailAddress" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Regist_editText_ls_thin"
+        android:layout_marginBottom="@dimen/regist_margin" >
+
+        <EditText
+            android:id="@+id/edt_signemobile"
+            style="@style/Regist_editText_selfls"
+            android:hint="@string/regist_mobile"
+            android:inputType="phone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            style="@style/Regist_editText_ls_thin"
+            android:layout_width="0dip"
+            android:layout_weight="3" >
+
+            <EditText
+                android:id="@+id/edt_signesecurity"
+                style="@style/Regist_editText_selfls"
+                android:hint="@string/regist_security"
+                android:inputType="phone" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_getverify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/regist_margin"
+            android:background="@drawable/bg_common_btn"
+            android:padding="@dimen/common_marginLeft_thin"
+            android:text="@string/regist_getsecurity"
+            android:textColor="@color/common_texthightlight_color" />
+    </LinearLayout>
+
+</LinearLayout>

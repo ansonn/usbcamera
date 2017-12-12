@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="100dip" >
+
+                <LinearLayout
+                    android:id="@+id/ll_order_overview_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_common_switch_fnb"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/common_margin" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textview_style_allcommon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_orderoverviewinfo"
+                            android:textColor="@color/app_theme_red" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/Common_line_style"
+                        android:layout_marginBottom="@dimen/common_margin"
+                        android:layout_marginLeft="@dimen/common_margin" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/common_margin_split"
+                        android:paddingLeft="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_ordernumber_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_orderoverviewNumber"
+                            style="@style/Common_textView_style"
+                            android:paddingLeft="@dimen/common_margin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/common_margin_split"
+                        android:paddingLeft="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_ordercreatedtime_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_ordercreatedTime"
+                            style="@style/Common_textView_style"
+                            android:paddingLeft="@dimen/common_margin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/common_margin_split"
+                        android:paddingLeft="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_orderstatus_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_orderStatus"
+                            style="@style/Common_textView_style"
+                            android:paddingLeft="@dimen/common_margin" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_order_receiver_info"
+                    style="@style/tabs_display_betweenupanddown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_common_switch_fnb"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/common_margin" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textview_style_allcommon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_receiver_info"
+                            android:textColor="@color/app_theme_red" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/Common_line_style"
+                        android:layout_marginBottom="@dimen/common_margin"
+                        android:layout_marginLeft="@dimen/common_margin" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/common_margin_split"
+                        android:paddingLeft="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_receiver_name_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_recevierName"
+                            style="@style/Common_textView_style"
+                            android:paddingLeft="@dimen/common_margin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/common_margin"
+                        android:paddingLeft="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_receiver_phone_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_recevierPhone"
+                            style="@style/Common_textView_style"
+                            android:paddingLeft="@dimen/common_margin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/common_margin_split"
+                        android:paddingLeft="@dimen/common_margin" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_receiver_address_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_recevierAddress"
+                            style="@style/Common_textView_style"
+                            android:paddingLeft="@dimen/common_margin" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_order_perchasingway"
+                    style="@style/tabs_display_betweenupanddown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_common_switch_fnb"
+                    android:padding="@dimen/common_margin" >
+
+                    <TextView
+                        style="@style/Common_textView_style"
+                        android:text="@string/order_perchasingway"
+                        android:textColor="@color/app_theme_red" />
+
+                    <TextView
+                        android:id="@+id/tv_purchasingway"
+                        style="@style/Common_textView_style"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/tabs_display_betweenupanddown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/common_margin" >
+
+                        <TextView
+                            android:id="@+id/tv_tmpforalgininvoiceinfo"
+                            style="@style/Common_textView_style"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/order_invoiceinfo_p"
+                            android:textColor="@color/app_theme_red" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/Common_line_style"
+                        android:layout_marginLeft="@dimen/common_margin" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_order_invoiceinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_common_switch_fnb"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/common_margin" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/common_margin_split"
+                                android:paddingTop="@dimen/common_margin_split" >
+
+                                <TextView
+                                    style="@style/Common_textView_style"
+                                    android:text="@string/order_invoicetype_nc" />
+
+                                <TextView
+                                    android:id="@+id/tv_invoicetypeinfo"
+                                    style="@style/Common_textView_style"
+                                    android:layout_marginLeft="@dimen/common_margin" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/common_margin_split"
+                                android:paddingTop="@dimen/common_margin_split" >
+
+                                <TextView
+                                    style="@style/Common_textView_style"
+                                    android:text="@string/order_invoicehead_nc" />
+
+                                <TextView
+                                    android:id="@+id/tv_invoiceheadinfo"
+                                    style="@style/Common_textView_style"
+                                    android:layout_marginLeft="@dimen/common_margin" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_order_detail"
+                    style="@style/tabs_display_betweenupanddown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_common_switch_fnb"
+                    android:padding="@dimen/common_margin" >
+
+                    <TextView
+                        style="@style/Common_textview_style_allcommon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_goodsdetail"
+                        android:textColor="@color/app_theme_red" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/godetail" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/tabs_display_betweenupanddown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_common_switch_fnb"
+                    android:orientation="vertical"
+                    android:padding="@dimen/common_margin" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_goodsvalue_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_ordergoodsvalue"
+                            style="@style/Common_textView_style"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/app_theme_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_goodstallage_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_ordergoodstallage"
+                            style="@style/Common_textView_style"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/app_theme_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:text="@string/order_freight_nc" />
+
+                        <TextView
+                            android:id="@+id/tv_orderfreight"
+                            style="@style/Common_textView_style"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/app_theme_red" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/Common_line_style"
+                        android:layout_marginTop="@dimen/common_margin" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin" >
+
+                        <TextView
+                            android:id="@+id/tv_order_overiview_fee"
+                            style="@style/Common_textView_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dip"
+                            android:textColor="@color/app_theme_red" />
+
+                        <TextView
+                            style="@style/Common_textView_style"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dip"
+                            android:layout_toLeftOf="@id/tv_order_overiview_fee"
+                            android:text="@string/order_feeshouldpay_nc" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tabs_display_betweenupanddown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_common_switch_fnb"
+                    android:orientation="vertical"
+                    android:padding="@dimen/common_margin" >
+
+                    <TextView
+                        style="@style/Common_textView_style"
+                        android:text="@string/order_remark" />
+
+                    <EditText
+                        android:id="@+id/et_orderremark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:minLines="3" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_gotocomment"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:background="@drawable/bg_common_btn_empty"
+                    android:text="@string/order_gotocomment"
+                    android:textColor="@color/common_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/common_margin"
+                    android:paddingBottom="@dimen/common_margin"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_bg" >
+
+            <View style="@style/Common_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:padding="@dimen/common_margin" >
+
+                <Button
+                    android:id="@+id/btn_orderrefund"
+                    style="@style/Common_btn_style"
+                    android:layout_width="@dimen/common_btn_width"
+                    android:layout_marginLeft="@dimen/common_margin_split"
+                    android:background="@drawable/bg_common_btn_empty"
+                    android:text="@string/order_orderrefund"
+                    android:textColor="@color/app_theme_red"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_ordertracking"
+                    style="@style/Common_btn_style"
+                    android:layout_width="@dimen/common_btn_width"
+                    android:layout_marginLeft="@dimen/common_margin_split"
+                    android:background="@drawable/bg_common_btn_empty"
+                    android:text="@string/order_ordertracking"
+                    android:textColor="@color/app_theme_red"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_orderpurchase"
+                    style="@style/Common_btn_style"
+                    android:layout_width="@dimen/common_btn_width"
+                    android:layout_marginLeft="@dimen/common_margin_split"
+                    android:background="@drawable/bg_corner_border_red"
+                    android:text="@string/order_orderpurchase"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

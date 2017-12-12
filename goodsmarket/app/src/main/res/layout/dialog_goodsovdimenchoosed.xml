@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/common_margin" >
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <com.market.view.GoodsCounter
+            android:id="@+id/gsc_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:layout_gravity="right" />
+
+        <Button
+            android:id="@+id/btn_goodsaddtocart"
+            style="@style/Common_redbtn_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/goodsov_addtocart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:background="@color/common_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_dialogGoodsImage"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:background="@drawable/bg_dialogimgeview"
+                    android:padding="0.5dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_dialognewprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="@dimen/goodsov_textHead2" />
+
+                <TextView
+                    android:id="@+id/tv_dialogGoodsTitle"
+                    style="@style/Goodsov_Inof_detail_text"
+                    android:textSize="@dimen/goodsov_textContent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/scv_dialog_dimenslist"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

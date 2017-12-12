@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_margin" >
+
+        <ImageView
+            android:id="@+id/img_commentview"
+            style="@style/item_images_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_goodstitle"
+                style="@style/Common_textview_style_allcommon"
+                android:ellipsize="marquee"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_textplus_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:id="@+id/tv_goodssize"
+                    style="@style/Common_textview_style_allcommon"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true" />
+
+                <Button
+                    android:id="@+id/btn_gotocommentitself"
+                    android:layout_width="@dimen/common_btn_width"
+                    android:layout_height="@dimen/common_btn_height_s"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_common_btn_empty"
+                    android:text="@string/order_makeacomment"
+                    android:textColor="@color/common_texthightlight_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

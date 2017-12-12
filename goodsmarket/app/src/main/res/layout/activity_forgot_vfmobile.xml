@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <Button
+        android:id="@+id/btn_requestVF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_btn_height"
+        android:layout_marginLeft="@dimen/regist_margin"
+        android:layout_marginRight="@dimen/regist_margin"
+        android:layout_marginTop="@dimen/forgot_marginTop"
+        android:background="@drawable/bg_common_btn"
+        android:padding="@dimen/common_marginLeft_thin"
+        android:text="@string/regist_getsecurity"
+        android:textColor="@color/common_texthightlight_color" />
+
+    <RelativeLayout
+        style="@style/Regist_editText_ls_thin"
+        android:layout_marginTop="@dimen/common_margin" >
+
+        <EditText
+            android:id="@+id/edt_vfmobilecode"
+            style="@style/Regist_editText_selfls"
+            android:hint="@string/forgot_vf_codeinmessage" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_fogot_vfmobile"
+        style="@style/Common_redbtn_style"
+        android:layout_marginTop="@dimen/forgot_marginTop"
+        android:text="@string/forgot_next" />
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/in_commheader"
+        layout="@layout/common_header" />
+
+    <ScrollView
+        android:id="@+id/slv_goodsovinof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_commheader"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg"
+            android:orientation="vertical" >
+
+            <com.market.view.GoodsImageView
+                android:id="@+id/giv_goodsView"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:scaleType="center" />
+
+            <LinearLayout
+                style="@style/Goodsov_Inof_detail"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_goodsov_clickable"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_goodsov_info_name"
+                            style="@style/Goodsov_Inof_detail_text"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/goodsov_textHead1" />
+
+                        <TextView
+                            android:id="@+id/tv_goodsov_info_dec"
+                            style="@style/Goodsov_Inof_detail_text"
+                            android:singleLine="true"
+                            android:textSize="@dimen/goodsov_textHead2" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/godetail" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_newprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:textColor="@color/app_theme_red"
+                        android:textSize="@dimen/goodsov_textHead2" />
+
+                    <TextView
+                        android:id="@+id/tv_oldprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Goodsov_Inof_tripleordouble_ll" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="@string/goodsov_promotion"
+                        android:textSize="@dimen/goodsov_textHead2" />
+
+                    <TextView
+                        android:id="@+id/tv_goodspromotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/goodsov_marginInfo"
+                        android:textSize="@dimen/goodsov_textContent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goodsovdimenchoosed"
+                    style="@style/Goodsov_Inof_tripleordouble_ll"
+                    android:background="@drawable/bg_goodsov_clickable"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/common_margin"
+                            android:text="@string/goodsov_size"
+                            android:textSize="@dimen/goodsov_textHead2" />
+
+                        <TextView
+                            android:id="@+id/tv_goodssize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/goodsov_marginInfo"
+                            android:textSize="@dimen/goodsov_textContent" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/godetail" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_goodsvo_comment"
+                style="@style/Goodsov_Inof_tripleordouble_ll"
+                android:layout_marginBottom="@dimen/goodsov_marginbottom"
+                android:layout_marginTop="@dimen/goodsov_margintop"
+                android:background="@drawable/bg_goodsov_clickable"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_goodsov_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_weight="9"
+                    android:text="@string/goodsov_comment"
+                    android:textSize="@dimen/goodsov_textHead2" />
+
+                <ImageView
+                    android:layout_width="1dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/godetail" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.market.view.SlidingMenu
+        android:layout_width="@dimen/slidingmenu_width"
+        android:layout_height="@dimen/slidingmenu_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="0dip"
+        android:src="@drawable/loading" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<resources>
+	<dimen name="title_text_size">21sp</dimen>
+	<dimen name="title_text_left_size">18sp</dimen>
+	<dimen name="header_height_size">55dip</dimen>
+	<dimen name="header_btn_marginLeft">10dip</dimen>
+	<dimen name="header_btn_marginRight">10dip</dimen>
+	
+	<dimen name="login_input_marginTop">35dip</dimen>
+	<dimen name="login_input_text_size">18sp</dimen>
+	<dimen name="login_inoput_line_margin">10dp</dimen>
+	<dimen name="login_loginbtn_margin_top">10dip</dimen>
+	<dimen name="login_loginbtn_height">44dip</dimen>
+	<dimen name="login_text_size">18sp</dimen>
+	<dimen name="login_authLogin_marginTop">45dip</dimen>
+	
+	<dimen name="dialog_title_height">35dip</dimen>
+	<dimen name="dialog_text_padding">12dip</dimen>
+	<dimen name="dialog_content_padding">15dip</dimen>
+	<dimen name="dialog_content_height">1dip</dimen>
+	<dimen name="dialog_btn_height">40dip</dimen>
+	<dimen name="dialog_line_margin">10dip</dimen>
+	<dimen name="dialog_content_margin">15dip</dimen>
+	
+	<dimen name="regist_marginTop">20dip</dimen>
+	<dimen name="regist_margin">10dip</dimen>
+	
+	<dimen name="forgot_marginTop">20dip</dimen>
+	<dimen name="forgot_text_size">14sp</dimen>
+	
+	<dimen name="address_input_height">40dip</dimen>
+	
+	<dimen name="goodsov_textheight">38dip</dimen>
+	<dimen name="goodsov_textHead1">17sp</dimen>
+	<dimen name="goodsov_textHead2">15sp</dimen>
+	<dimen name="goodsov_textContent">14sp</dimen>
+	<dimen name="goodsov_marginInfo">30dip</dimen>
+	<dimen name="goodsov_sm_margintnb">3dip</dimen>
+	<dimen name="goodsov_sm_btn_width">55dip</dimen>
+	<dimen name="goodsov_padding_und">12dip</dimen>
+	
+	<!--  goodsov_marginbottom = goodsov_margintop + goodsov_bottommenu_height + goodsov_padding_und -->
+	<dimen name="goodsov_marginbottom">87dip</dimen>
+	<dimen name="goodsov_margintop">20dip</dimen>
+	<dimen name="goodsov_bottommenu_height">55dip</dimen>
+	
+	<dimen name="goodsov_bottommenu_btnNO1width">55dip</dimen>
+	<dimen name="goodsov_bottommenu_btnNO2width">55dip</dimen>
+	<dimen name="goodsov_bottommenu_btnNO3width">55dip</dimen>
+	<dimen name="goodsov_bottommenu_btnmargin">10dip</dimen>
+	<dimen name="goodsov_dialog_arcwidth">10dip</dimen>
+	<dimen name="goodsov_dialog_border">3dip</dimen>
+	
+	<dimen name="ordergoods_img_width">66dip</dimen> 
+	<dimen name="ordergoods_img_height">66dip</dimen> 
+	
+	<dimen name="common_marginTop">35dip</dimen>
+	<dimen name="common_margin">10dip</dimen>
+	<dimen name="common_margin_double">20dip</dimen>
+	<dimen name="common_margin_split">5dip</dimen>
+	<dimen name="common_margin_upndown">20dip</dimen>
+	<dimen name="common_marginLeft">25dip</dimen>
+	<dimen name="common_marginRight">25dip</dimen>
+	<dimen name="common_marginLeft_thin">10dip</dimen>
+	<dimen name="common_marginRight_thin">10dip</dimen>
+	<dimen name="common_input_height">25dip</dimen>
+	<dimen name="common_line_height">0.5dip</dimen>
+	<dimen name="common_textplus_size">18sp</dimen>
+	<dimen name="common_textpluss_size">16sp</dimen>
+	<dimen name="common_text_size">14sp</dimen>
+	<dimen name="common_subscript_text_size">12sp</dimen>
+	<dimen name="common_btn_height_s">32dip</dimen>
+	<dimen name="common_btn_height">40dip</dimen>
+	<dimen name="common_btn_width">100dip</dimen>
+	
+	
+	<dimen name="switchview_width">66dip</dimen> 
+	<dimen name="switchview_height">40dip</dimen> 
+	<dimen name="switchview_padding">1dip</dimen>
+	
+	<dimen name="home_gridview_item_space">10dip</dimen>
+	
+	<dimen name="vercher_item_height">120dip</dimen>
+	<dimen name="vercher_item_margintop">14dip</dimen>
+	<dimen name="vercher_item_marginbottom">16dip</dimen>
+	<dimen name="vercher_item_texttitle">26sp</dimen>
+	<dimen name="vercher_item_textdetail">12sp</dimen>
+	
+	<!-- 分类列表图片大小 -->
+	<dimen name="category_icon_size">70dip</dimen>
+	<!-- 商品列表图片大小 -->
+	<dimen name="good_icon_size">100dip</dimen>
+	
+	
+	<dimen name="good_addresslist_itemhegiht">80dip</dimen>
+	
+	<!-- slidingmenu -->
+	<dimen name="slidingmenu_width">190dip</dimen>
+	<dimen name="slidingmenu_height">50dip</dimen>
+	<dimen name="slidingmenu_btn_height">45dip</dimen>
+
+	<dimen name="find_item_height">50dip</dimen>
+	
+	<!-- 计数器的尺码 -->
+	<dimen  name="counter_rectangle_size">35dip</dimen>
+</resources>

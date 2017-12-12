@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.market.view.GoodsImageViewPage
+        android:id="@+id/img_goodsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <com.market.view.CircleView 
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/common_text_color"
+        android:id="@+id/cv_goodsViewprocess"
+        android:layout_width="50dip"
+        android:layout_height="50dp"
+        />
+    
+</RelativeLayout>
