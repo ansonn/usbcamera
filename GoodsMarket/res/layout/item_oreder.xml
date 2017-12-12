@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bg_common_switch_fnb"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_ordernumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_margin" >
+
+            <TextView
+                android:id="@+id/tv_ordernumber"
+                style="@style/Common_textview_style_allcommon"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="2251564100015102001" />
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/godetail"
+                android:layout_gravity="center|right"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            style="@style/Common_line_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/common_margin" />
+
+        <TextView
+            android:id="@+id/tv_orderCreatedTime"
+            style="@style/Common_textview_style_allcommon"
+            android:paddingBottom="@dimen/common_margin_split"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingTop="@dimen/common_margin_split"
+            android:text="2014-12-12 13:55:23" />
+
+        <LinearLayout
+            android:id="@+id/ll_orderTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/common_margin_split"
+            android:paddingLeft="@dimen/common_margin"
+             >
+
+            <TextView
+                style="@style/Common_textview_style_allcommon"
+                android:text="@string/order_ordertotalamount_nc" />
+
+            <TextView
+                android:id="@+id/tv_orderTotalAmount"
+                style="@style/Common_textview_style_allcommon"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:text="￥0.0"
+                android:textColor="@color/app_theme_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_orderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_margin"
+           >
+
+            <TextView
+                style="@style/Common_textview_style_allcommon"
+                android:text="@string/order_orderstatus_nc" />
+
+            <TextView
+                android:id="@+id/tv_orderStatus"
+                style="@style/Common_textview_style_allcommon"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:text="等待付款"
+                android:textColor="@color/app_theme_red" />
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:id="@+id/ll_orderOverviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View style="@style/Common_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="@dimen/common_margin_split"
+            android:paddingRight="@dimen/common_margin_split"
+            android:paddingTop="@dimen/common_margin_split" >
+
+            <Button
+                android:id="@+id/btn_orderpurchase"
+                style="@style/Common_btn_style"
+                android:layout_marginLeft="@dimen/common_margin_split"
+                android:background="@drawable/bg_corner_border_red"
+                android:text="@string/order_orderpurchase"
+               	android:visibility="gone"
+                android:width="@dimen/common_btn_width" />
+
+            <Button
+                android:id="@+id/btn_orderrefund"
+                style="@style/Common_btn_style"
+                android:layout_marginLeft="@dimen/common_margin_split"
+                android:background="@drawable/bg_corner_border_red"
+                android:text="@string/order_orderrefund"
+                android:visibility="gone"
+                android:width="@dimen/common_btn_width" />
+
+            <Button
+                android:id="@+id/btn_ordercancel"
+                style="@style/Common_btn_style"
+                android:layout_marginLeft="@dimen/common_margin_split"
+                android:background="@drawable/bg_corner_border_red"
+                android:text="@string/order_ordercancel"
+                android:visibility="gone"
+                android:width="@dimen/common_btn_width" />
+
+            <Button
+                android:id="@+id/btn_ordercomment"
+                style="@style/Common_btn_style"
+                android:layout_marginLeft="@dimen/common_margin_split"
+                android:background="@drawable/bg_corner_border_red"
+                android:text="@string/order_ordercomment"
+                android:visibility="gone"
+                android:width="@dimen/common_btn_width" />
+
+            <Button
+                android:id="@+id/btn_orderdelete"
+                style="@style/Common_btn_style"
+                android:layout_marginLeft="@dimen/common_margin_split"
+                android:background="@drawable/bg_corner_border_red"
+                android:text="@string/order_orderdelete"
+                android:visibility="gone"
+                android:width="@dimen/common_btn_width" />
+
+            <Button
+                android:id="@+id/btn_orderreceipt"
+                style="@style/Common_btn_style"
+                android:layout_marginLeft="@dimen/common_margin_split"
+                android:background="@drawable/bg_corner_border_red"
+                android:text="@string/order_orderreceipt"
+                android:visibility="gone"
+                android:width="@dimen/common_btn_width" />
+        </LinearLayout>
+
+        <View style="@style/Common_line_style" />
+    </LinearLayout>
+
+</LinearLayout>

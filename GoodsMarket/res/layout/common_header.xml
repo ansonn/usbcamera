@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height_size"
+    android:background="@color/navigation_background"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/common_header_btn_left"
+        style="@style/Header_btn_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/header_btn_marginLeft"
+        android:padding="@dimen/common_margin"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/common_header_imgbtn_left"
+        style="@style/Header_btn_layout"
+        android:layout_above="@id/common_header_btn_left"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/header_btn_marginLeft"
+        android:background="@drawable/bg_headbtn"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/common_header_btn_center"
+        style="@style/Header_btn_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:singleLine="true" />
+
+    <com.market.view.ButtonWithImage
+        android:id="@+id/common_header_btn_right"
+        style="@style/Header_btn_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_btn_marginRight"
+        android:background="@drawable/bg_headbtn"
+        android:textSize="@dimen/title_text_left_size"
+        android:paddingLeft="@dimen/common_margin_split"
+        android:paddingRight="@dimen/common_margin_split" />
+
+</RelativeLayout>

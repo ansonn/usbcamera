@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:id="@+id/rl_carttipsheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/banner_bg"
+        android:padding="@dimen/common_margin_split" >
+
+        <TextView
+            android:id="@+id/tv_carttips"
+            style="@style/Common_textview_style_allcommon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/common_margin_split"
+            android:layout_toLeftOf="@+id/tv_carttipstologin"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/tv_carttipstologin"
+            style="@style/Common_btn_style"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_corner_border_red"
+            android:text="@string/login_tips" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_cartbackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imv_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dip"
+                android:src="@drawable/cartbig" />
+
+            <TextView
+                style="@style/Common_textView_style"
+                android:layout_below="@id/imv_temp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margin"
+                android:text="@string/cart_isempty" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_templayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graythinest"
+            android:paddingBottom="@dimen/common_margin_split"
+            android:paddingTop="@dimen/common_margin_split" >
+
+            <RelativeLayout
+                android:id="@+id/rl_cartcheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_cart_temptotalamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/common_margin"
+                    android:text="@string/cart_totalamount"
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_cart_totalamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_cart_temptotalamount"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="@dimen/common_text_size" />
+
+                <Button
+                    android:id="@+id/btn_cartcheckout"
+                    style="@style/Common_btn_style"
+                    android:layout_width="@dimen/common_btn_width"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:background="@drawable/bg_corner_border_red"
+                    android:text="@string/cart_purchase" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.market.view.PullToRefreshListView
+            android:id="@+id/lv_cartgoodslist"
+            style="@style/listview_onselector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_templayout"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</LinearLayout>

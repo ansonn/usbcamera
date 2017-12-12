@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_sildingmenuBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+    <ImageView
+        android:id="@+id/iv_sildingmenuTrigger"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+         android:src="@drawable/liao" 
+        android:clickable="true"
+        android:padding="@dimen/goodsov_sm_margintnb" />
+
+    <Button
+        android:id="@+id/btn_sildingmenucwf"
+        android:layout_width="@dimen/goodsov_sm_btn_width"
+        android:layout_height="@dimen/slidingmenu_btn_height"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/goodsov_sm_margintnb"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginTop="@dimen/goodsov_sm_margintnb"
+        android:layout_toRightOf="@id/iv_sildingmenuTrigger"
+        android:background="@drawable/bg_slidding_menu_cf"
+        android:text="@string/goodsov_chatwithfriend"
+        android:gravity="center"
+        android:textColor="@android:color/white" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_sildingmenucws"
+        android:layout_width="@dimen/goodsov_sm_btn_width"
+        android:layout_height="@dimen/slidingmenu_btn_height"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/goodsov_sm_margintnb"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginTop="@dimen/goodsov_sm_margintnb"
+        android:layout_toRightOf="@id/btn_sildingmenucwf"
+        android:background="@drawable/bg_slidding_menu_cs"
+        android:text="@string/goodsov_chatwithserver"
+        android:gravity="center"
+        android:textColor="@android:color/white" >
+    </Button>
+
+</RelativeLayout>

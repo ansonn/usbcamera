@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_messagetitle"
+        style="@style/Dialog_commontext"
+        android:layout_height="@dimen/dialog_title_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dialog_text_padding" />
+
+    <RelativeLayout
+        android:id="@+id/rel_messagecontent"
+        style="@style/Dialog_commontext"
+        android:layout_marginBottom="@dimen/dialog_content_margin"
+        android:paddingLeft="@dimen/dialog_content_padding" >
+    </RelativeLayout>
+
+    <View
+        style="@style/Common_line_style"
+        android:layout_marginLeft="@dimen/dialog_line_margin"
+        android:layout_marginRight="@dimen/dialog_line_margin" />
+
+    <LinearLayout
+        android:id="@+id/ll_messagebuttons"
+        style="@style/Dialog_commontext"
+        android:layout_height="@dimen/dialog_btn_height"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <TextView
+        style="@style/Common_textview_style_size_plus"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin_double"
+        android:text="@string/refund_applydetail" />
+
+    <View style="@style/Common_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/common_margin_split"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="@dimen/common_margin_split" >
+
+        <TextView
+            android:id="@+id/tv_refundorderid"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginBottom="@dimen/common_margin_split" />
+
+        <View style="@style/Common_line_style" />
+
+        <TextView
+            android:id="@+id/tv_refundcreatetime"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginTop="@dimen/common_margin_split"
+            android:layout_marginBottom="@dimen/common_margin_split" />
+
+        <View style="@style/Common_line_style" />
+
+        <TextView
+            android:id="@+id/tv_refundway"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginTop="@dimen/common_margin_split"
+            android:layout_marginBottom="@dimen/common_margin_split" />
+
+        <View style="@style/Common_line_style" />
+
+        <TextView
+            android:id="@+id/tv_refundreason"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginTop="@dimen/common_margin_split"
+             />
+    </LinearLayout>
+
+    <TextView
+        style="@style/Common_textview_style_size_plus"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin_double"
+        android:text="@string/refund_dealdetail" />
+
+    <View style="@style/Common_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/common_margin_split"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingTop="@dimen/common_margin_split" >
+
+        <TextView
+            android:id="@+id/tv_refundresult"
+            style="@style/Common_textview_style_size_plus_cb" 
+            android:layout_marginBottom="@dimen/common_margin_split"/>
+
+        <View style="@style/Common_line_style" />
+
+        <TextView
+            android:id="@+id/tv_refunddealtime"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginTop="@dimen/common_margin_split" 
+            android:layout_marginBottom="@dimen/common_margin_split"/>
+
+        <View style="@style/Common_line_style" />
+
+        <TextView
+            android:id="@+id/tv_refundmomeydirct"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginTop="@dimen/common_margin_split"
+            android:layout_marginBottom="@dimen/common_margin_split" />
+
+        <View style="@style/Common_line_style" />
+
+        <TextView
+            android:id="@+id/tv_refundaccount"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginTop="@dimen/common_margin_split"
+            android:layout_marginBottom="@dimen/common_margin_split" />
+
+        <View style="@style/Common_line_style" />
+
+        <TextView
+            android:id="@+id/tv_refundamount"
+            style="@style/Common_textview_style_size_plus_cb"
+            android:layout_marginTop="@dimen/common_margin_split" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

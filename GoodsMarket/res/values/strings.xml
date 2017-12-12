@@ -1,0 +1,284 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">GoodsMarket</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="confirm">确认</string>
+    <string name="add">添加</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="cleanall">清空</string>
+    <string name="none">无</string>
+    <string name="forperson">个人</string>
+    <string name="forcompany">企业</string>
+    <string name="invoice">发票</string>
+    <string name="invoiceinfo">发票信息(<xliff:g id="xxx">%s</xliff:g>%%)</string>
+    <string name="pricetag">￥<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="friendlyTips">温馨提示：<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="postsuccess">提交成功</string>
+
+    <!-- 登陆页面 -->
+    <string name="login_title">登录</string>
+    <string name="login_tips">登录</string>
+    <string name="login_account_hint">手机号/邮箱/用户名</string>
+    <string name="login_password_hint">密码</string>
+
+    <!-- messageDialog -->
+    <string name="messageDialog_confirm">确认</string>
+    <string name="messageDialog_cancel">取消</string>
+
+    <!-- 首页 -->
+    <string name="main_page_title">首页</string>
+    <string name="tab_indicator_home">首页</string>
+    <string name="tab_indicator_category">分类</string>
+    <string name="tab_indicator_find">发现</string>
+    <string name="tab_indicator_cart">购物车</string>
+    <string name="tab_indicator_account">@string/forperson</string>
+    <string name="newest_product">最新产品</string>
+    <string name="hotest_product">最热产品</string>
+    <string name="login_findPassword">找回密码</string>
+    <string name="login_userGuide">用户注册</string>
+    <string name="login_authLogin">其他方式登录</string>
+    <string name="login_tencnetWeiboLogin">腾讯微博</string>
+    <string name="login_sinaLogin">新浪微博</string>
+    <string name="login_tencnetQQLogin">QQ</string>
+    <string name="login_tencnetWeixinLogin">微信</string>
+    <string name="username_and_password_no_empty">用户名或密码不能为空！</string>
+
+    <!-- 注册页面 -->
+    <string name="regist_title">注册</string>
+    <string name="regist_operation">提交</string>
+    <string name="regist_username">用户名 </string>
+    <string name="regist_password">密码</string>
+    <string name="regist_email">邮箱</string>
+    <string name="regist_mobile">手机</string>
+    <string name="regist_security">验证码</string>
+    <string name="regist_getsecurity">获取验证码</string>
+    <string name="regist_info_not_completed">填写信息不完整</string>
+    <string name="regist_verifyuncompleted_err">使用手机注册须填写验证码</string>
+    <string name="regist_bothemailnmobileempty_err">请选择手机和邮件地址其中一种注册方式</string>
+    <string name="regist_mobile_format_error">手机号码格式不正确</string>
+    <string name="regist_email_format_error">邮件地址格式不正确</string>
+    <string name="regist_password_length_lessthan6">密码长度需大于6</string>
+    <string name="regist_username_format_error">用户名格式不正确</string>
+
+    <!-- 忘记密码 -->
+    <string name="forgot_title">找回密码</string>
+    <string name="forgot_vf_choose_title">找回密码</string>
+    <string name="forgot_vf_pwreset_title">找回密码</string>
+    <string name="forgot_vf_title">验证</string>
+    <string name="forgot_vf_mobile">手机验证</string>
+    <string name="forgot_vf_email">邮件验证</string>
+    <string name="forgot_vf_requestcodeagain">重新发送</string>
+    <string name="forgot_vf_codeinmessage">验证码</string>
+    <string name="forgot_next">下一步</string>
+    <string name="forgot_operation">提交</string>
+    <string name="forgot_idforforgot">手机／邮箱／用户名</string>
+    <string name="forgot_password">密码</string>
+    <string name="forgot_passwordconfirm">确认密码</string>
+    <string name="forgot_guide">填写注册时的邮件，成功后系统会自动发送重置密码的邮件，请登录邮件查收</string>
+
+    <!-- 商品详情 -->
+    <string name="goodsov_title">商品详情</string>
+    <string name="goodsov_chatwithfriend">好友</string>
+    <string name="goodsov_chatwithserver">客服</string>
+    <string name="goodsov_addtocart">加入购物车</string>
+    <string name="goodsov_takecare">关注</string>
+    <string name="goodsov_dimen">尺寸:</string>
+    <string name="goodsov_promotion">促销:</string>
+    <string name="goodsov_comment">购买评价 (<xliff:g id="xxx">%s</xliff:g>人)</string>
+    <string name="goodsov_size">规格:</string>
+    <string name="goodsov_share">分享</string>
+    <string name="goodsov_purchasedtime">购买时间:</string>
+    <string name="goodsov_commenttitle">购买评价</string>
+
+    <!-- 优惠券 -->
+    <string name="coupon_title">优惠券</string>
+    <string name="coupon_button_ensure">确定</string>
+    <string name="coupon_userguide_tips">优惠券一次只能使用一张</string>
+    <string name="coupon_userguide_inputtips">输入优惠码</string>
+    <string name="coupon_header_add">添加</string>
+
+    <!-- 订单 -->
+    <string name="order_gotocomment">去评价</string>
+    <string name="order_fill">订单填写</string>
+    <string name="order_orderlist">订单列表</string>
+    <string name="order_orderseek">订单查找</string>
+    <string name="order_receiver_info">收件人信息</string>
+    <string name="order_receiver_name">收货人</string>
+    <string name="order_receiver_phone">联系电话</string>
+    <string name="order_receiver_address">地址</string>
+    <string name="order_receiver_name_nc">收货人:</string>
+    <string name="order_receiver_phone_nc">联系电话:</string>
+    <string name="order_receiver_address_nc">地址:</string>
+    <string name="order_perchasingway">支付方式</string>
+    <string name="order_invoiceinfo">发票信息(6%)</string>
+    <string name="order_invoiceinfo_p">发票信息</string>
+    <string name="order_invoicetype_nc">发票类型:</string>
+    <string name="order_invoicetype_normal">普通发票</string>
+    <string name="order_invoicehead_nc">发票抬头:</string>
+    <string name="order_coupon">优惠券</string>
+    <string name="order_orderposted">提交订单</string>
+    <string name="order_orderpurchase">付款</string>
+    <string name="order_orderrefund">申请退款</string>
+    <string name="order_ordercancel">取消</string>
+    <string name="order_ordercomment">评价</string>
+    <string name="order_orderdelete">删除</string>
+    <string name="order_orderreceipt">确认付款</string>
+    <string name="order_ordertracking">订单跟踪</string>
+    <string name="order_goodsdetail">商品清单</string>
+    <string name="order_goodsvalue_nc">商品价格:</string>
+    <string name="order_goodstallage_nc">税:</string>
+    <string name="order_freight_nc">运费:</string>
+    <string name="order_remark">订单备注</string>
+    <string name="order_feeshouldpay_nc">应付金额:</string>
+    <string name="order_ordertotalamount">订单金额</string>
+    <string name="order_orderstatus">订单状态</string>
+    <string name="order_ordertotalamount_nc">订单金额:</string>
+    <string name="order_orderstatus_nc">订单状态:</string>
+    <string name="order_ordercreatedtime_nc">下单时间:</string>
+    <string name="order_ordernumber_nc">订单号:</string>
+    <string name="order_orderoverviewinfo">订单信息</string>
+    <string name="order_orderoverviewTitle">订单详情</string>
+    <string name="order_goodspurchasedlistTitle">商品清单</string>
+    <string name="order_goodspurchasedcountofitself">×<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="order_invoiceinofcannotbeEmpty">单位名称不能为空</string>
+    <string name="order_invoiceinofcompany">单位</string>
+    <string name="order_goodsscore">评分:</string>
+    <string name="order_makeacomment">发表评价</string>
+    <string name="order_makeacommentaction">发表</string>
+    <string name="order_writeacommenttitle">写评价</string>
+    <string name="order_ordercommenttitle">订单评价</string>
+
+    <!-- 地址 -->
+    <string name="address_add_modify">修改地址</string>
+    <string name="address_add_default">默认地址</string>
+    <string name="address_receiver_name_nc">收件人:</string>
+    <string name="address_receiver_code_nc">邮政编码:</string>
+    <string name="address_receiver_mobile_nc">手机:</string>
+    <string name="address_receiver_area_nc">区域:</string>
+    <string name="address_receiver_adddesc_nc">详细地址:</string>
+    <string name="address_addresslist">地址列表</string>
+    <string name="address_magaddresslist">地址管理</string>
+    <string name="address_createdSUCCESS">创建成功</string>
+    <string name="address_updatedSUCCESS">修改成功</string>
+
+    <!-- 支付方式 -->
+    <string name="payment_title">支付方式</string>
+
+    <!-- 分类 -->
+    <string name="category_title">分类</string>
+
+    <!-- 产品列表 -->
+    <string name="select">筛选</string>
+    <string name="popularity">人气</string>
+    <string name="sales">销量</string>
+    <string name="price">价格</string>
+    <string name="register_date">上架时间</string>
+    <string name="loading">正在加载中...</string>
+    <string name="good_comment">好评度<xliff:g id="xxx">%s</xliff:g> (<xliff:g id="xxx">%s</xliff:g>人)</string>
+
+    <!-- 下拉刷新 -->
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <string name="pushmsg_center_pull_down_text">下拉可以刷新</string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="xsearch_loading">正在加载中…</string>
+
+    <!-- 加载图片失败时的提示文本 -->
+    <string name="picture_load_image_failed">点击屏幕，重新加载</string>
+    <!-- 加载中提示 -->
+    <string name="picture_image_loading">正在加载…</string>
+
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="pull_to_refresh_no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+
+    <!-- 發現 -->
+    <string name="find_title">发现</string>
+    <string name="nearby">附近的人在逛</string>
+    <string name="sweep_qr">扫一扫</string>
+
+    <!-- 购物车 -->
+    <string name="cart_fragment_title">购物车</string>
+    <string name="cart_cleanallgoods">@string/cleanall</string>
+    <string name="cart_goodsnum">商品编号:<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="cart_totalamount">总价:</string>
+    <string name="cart_purchase">结算</string>
+    <string name="cart_addgoodsfail">添加到购物车失败</string>
+    <string name="cart_addgoodssuccess">已添加到购物车！</string>
+    <string name="cart_isempty">购物车还是空的，赶紧去购物吧~</string>
+    <string name="cart_logintips">现在登录可以同步您电脑和手机购物车中的商品</string>
+
+    <!-- 个人 -->
+    <string name="person_title">个人信息</string>
+    <string name="save">保存</string>
+    <string name="user_name">用户名</string>
+    <string name="head_image">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="register_time"></string>
+    <string name="account_and_safe">账号与安全</string>
+    <string name="order_query">订单查询</string>
+    <string name="coupon">优惠券</string>
+    <string name="refund_query">退款查询</string>
+    <string name="around_person">附近的人</string>
+    <string name="advince">意见建议</string>
+    <string name="abount_us">关于我们</string>
+    <string name="check_update">检查更新</string>
+    <string name="my_attention">我的关注</string>
+    <string name="my_review">我的评价</string>
+    <string name="about">关于我们</string>
+    <string name="logout">登出</string>
+    <string name="my_favoritecomment">评价数(<xliff:g id="xxx">%s</xliff:g>)</string>
+    <string name="my_favoritetitle">我的关注</string>
+
+    <!-- 更新 -->
+    <string name="is_newest_version">已经是最新版本!</string>
+    <string name="nofity">提示</string>
+    <string name="update">更新</string>
+    <string name="cancle">取消</string>
+    <string name="update_fail">更新失败，请重试</string>
+    <string name="find_newest">发现新版本，更新内容如下：\n<xliff:g id="xxx">%s</xliff:g></string>
+
+    <!-- 意见建议 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="submit">提交 </string>
+    <string name="submit_success">提交成功！ </string>
+    <string name="content_cannot_null">提交内容不能为空! </string>
+    <string name="please_input_feedback">请输入反馈内容 </string>
+
+    <!-- 发现 -->
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="qrcode_scan">二维码扫描</string>
+    <!-- 计数器 -->
+    <string name="counter_store">库存(<xliff:g id="xxx">%s</xliff:g>)</string>
+
+    <!-- 退款　 -->
+    <string name="refund_refundsearch">退款查询</string>
+    <string name="refund_refunddetail">退款详情</string>
+    <string name="refund_applydetail">申请详情</string>
+    <string name="refund_orderid">订单编号:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_createtme">创建时间:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_way">退款方式:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_reason">退款原因:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_dealdetail">处理详情</string>
+    <string name="refund_dealstatus">处理状态:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_result">处理结果:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_dealtime">处理时间:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_momeydirct">退到渠道:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_account">退款账号:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="refund_amount">退款金额:&#160;&#160;<xliff:g id="xxx">%s</xliff:g></string>
+
+</resources>

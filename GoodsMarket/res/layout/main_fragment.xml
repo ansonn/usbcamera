@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+    <include layout="@layout/common_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.market.view.GalleryView
+                android:id="@+id/gallery_view"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                 >
+            </com.market.view.GalleryView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:drawableLeft="@drawable/category_flag_bar"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dip"
+                android:text="@string/newest_product"
+                android:textSize="20sp" />
+
+            <com.market.view.AdaptionGridView
+                android:id="@+id/gv_newsgoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:horizontalSpacing="@dimen/home_gridview_item_space"
+                android:minHeight="300dip"
+                android:numColumns="3"
+                android:padding="@dimen/home_gridview_item_space"
+                android:verticalSpacing="@dimen/home_gridview_item_space" >
+            </com.market.view.AdaptionGridView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:drawableLeft="@drawable/category_flag_bar"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dip"
+                android:text="@string/hotest_product"
+                android:textSize="20sp" />
+
+            <com.market.view.AdaptionGridView
+                android:id="@+id/gv_hotestgoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:horizontalSpacing="@dimen/home_gridview_item_space"
+                android:minHeight="300dip"
+                android:numColumns="3"
+                android:padding="@dimen/home_gridview_item_space"
+                android:verticalSpacing="@dimen/home_gridview_item_space" >
+            </com.market.view.AdaptionGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

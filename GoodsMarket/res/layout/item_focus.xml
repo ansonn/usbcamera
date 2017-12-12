@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_margin_split" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:paddingTop="@dimen/common_margin" >
+
+            <ImageView
+                android:id="@+id/img_cartgoodsimg"
+                style="@style/item_images_left"
+                android:layout_gravity="top" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/common_margin_split" >
+
+                <TextView
+                    android:id="@+id/tv_cartgoodsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_margin_split"
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_cartgoodsPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_margin_split"
+                    android:textSize="@dimen/common_text_size" />
+
+
+                    <TextView
+                        android:id="@+id/tv_amountofgoods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_margin_double"
+                        android:textColor="@color/app_theme_red"
+                        android:textSize="@dimen/common_text_size"
+                        android:textStyle="bold" />
+                    
+                    <TextView
+                        android:id="@+id/tv_commnet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_gravity="center"
+             android:layout_width="0dip"
+             android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/godetail"/>
+    </LinearLayout>
+
+    <View
+        style="@style/Common_line_style"
+        android:layout_marginLeft="@dimen/common_margin"
+         />
+
+</LinearLayout>

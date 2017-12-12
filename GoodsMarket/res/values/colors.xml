@@ -1,0 +1,34 @@
+<resources>
+
+    <color name="navigation_background">#C52D32</color>
+    <color name="app_theme_red">#C52D32</color>
+    <color name="app_theme_red_press">#B51D22</color>
+    <color name="blue">#1287CE</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="graytext">#999999</color>
+    <color name="graythin">#DDDDDD</color>
+    <color name="graythinest">#EFEFEF</color>
+    <color name="header_btn">#FFFFFF</color>
+    <color name="border_bg">#DDDDDD</color>
+    <color name="banner_bg">#99000000</color>
+    <color name="common_bg">#EEEEEE</color>
+    <color name="common_line">#CCCCCC</color>
+    <color name="common_hint">#CCCCCC</color>
+    <color name="common_text_color">#777777</color>
+    <color name="common_texthightlight_color">#555555</color>
+    <color name="common_url_likeblue">#00AACC</color>
+    <color name="switch_button_bg_on">#FF00FF00</color>
+    <color name="switch_button_bg_off">#FFCCCCCC</color>
+    <color name="switch_button_self">#FFFFFFFF</color>
+    <color name="purchase_menu">#DDDDDD</color>
+    <color name="tab_icon_text_color_nor">#AAAAAA</color>
+    <color name="tab_icon_text_color_selected">#D33F2A</color>
+    <color name="gred_text_color">#D2D2D4</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>

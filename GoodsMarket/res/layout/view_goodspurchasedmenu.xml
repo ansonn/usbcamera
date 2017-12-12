@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/goodsov_bottommenu_height"
+    android:background="@color/purchase_menu"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_goodspmadd"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_margin="@dimen/goodsov_bottommenu_btnmargin"
+        android:background="@drawable/bg_corner_border_red"
+        android:textColor="@android:color/white"
+        android:text="@string/goodsov_addtocart" 
+        android:textSize="@dimen/goodsov_bottommenu_btnmargin"/>
+
+    <Button
+        android:id="@+id/btn_goodspmtake"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/goodsov_bottommenu_btnmargin"
+        android:layout_weight="3"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_corner_border_blue"
+        android:text="@string/goodsov_takecare" />
+
+    <ImageView
+        android:id="@+id/btn_goodspmcheckout"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/goodsov_bottommenu_btnmargin"
+        android:src="@drawable/cart"
+        android:background="@android:color/white"
+         />
+
+</LinearLayout>

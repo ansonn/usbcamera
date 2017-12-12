@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Common_textview_style_allcommon"
+            android:text="@string/order_invoicetype_nc" />
+
+        <TextView
+            style="@style/Common_textview_style_allcommon"
+            android:layout_marginLeft="@dimen/common_margin_double"
+            android:text="@string/order_invoicetype_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin"
+        android:layout_marginTop="0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Common_textview_style_allcommon"
+            android:text="@string/order_invoicehead_nc" />
+
+        <TextView
+            android:id="@+id/tv_voucherperson"
+            style="@style/Common_textview_style_allcommon"
+            android:layout_marginLeft="@dimen/common_margin_double"
+            android:layout_marginRight="@dimen/common_margin"
+            android:padding="@dimen/common_margin_split"
+            android:text="@string/forperson" />
+
+        <TextView
+            android:id="@+id/tv_vouchercompany"
+            style="@style/Common_textview_style_allcommon"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:padding="@dimen/common_margin_split"
+            android:text="@string/forcompany" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_vouchertitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_double"
+        android:layout_marginRight="@dimen/common_margin_double"
+        android:minLines="2"
+        android:visibility="gone" />
+
+</LinearLayout>

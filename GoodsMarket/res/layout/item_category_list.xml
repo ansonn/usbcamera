@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_next_icon"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" android:paddingRight="10dip">
+
+        <ImageView
+            android:id="@+id/iv_thumb"
+            android:layout_width="@dimen/category_icon_size"
+            android:layout_height="@dimen/category_icon_size"
+            android:layout_marginRight="20dip"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignBaseline="@id/iv_thumb"
+            android:layout_alignLeft="@id/iv_thumb"
+            android:gravity="clip_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_category_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sub_category_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="14sp" android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_next_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_next_icon" />
+
+</RelativeLayout>

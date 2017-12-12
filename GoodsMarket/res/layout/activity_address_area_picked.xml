@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_areaActivitylistnavigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_margin"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_areaActivitylistnavigator"
+            style="@style/Common_textView_style" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_address_area_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

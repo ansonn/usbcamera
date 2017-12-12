@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_orderlogstatus"
+        style="@style/Common_textview_style_allcommon"
+        android:layout_margin="@dimen/common_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin" >
+
+        <TextView
+            android:id="@+id/tv_orderlogtimes"
+            style="@style/Common_textView_style"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/common_subscript_text_size" />
+
+        <TextView
+            android:id="@+id/tv_orderclient"
+            style="@style/Common_textView_style"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/common_subscript_text_size" />
+    </RelativeLayout>
+
+    <View
+        style="@style/Common_line_style"
+        android:layout_marginLeft="@dimen/common_margin_split"
+        android:layout_marginRight="@dimen/common_margin_split" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <RelativeLayout
+        style="@style/Common_lm_hw"
+        android:background="@android:color/white"
+        android:padding="@dimen/common_margin" >
+
+        <TextView
+            style="@style/Common_textView_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/address_add_default" />
+
+        <com.market.view.SwitchView
+            android:id="@+id/sv_addressSetToDefault"
+            style="@style/switchview_defaultstyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/common_margin" />
+    </RelativeLayout>
+
+    <View style="@style/Common_line_style" />
+
+    <LinearLayout
+        style="@style/Common_ll_mw_h"
+        android:padding="@dimen/common_margin" >
+
+        <TextView
+            style="@style/Common_textView_style"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/common_margin_split"
+            android:text="@string/address_receiver_name_nc" />
+
+        <EditText
+            android:id="@+id/et_address_client_name"
+            style="@style/Common_editText_he"
+            android:layout_width="0dip"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Common_ll_mw_h"
+        android:padding="@dimen/common_margin" >
+
+        <TextView
+            style="@style/Common_textView_style"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/common_margin_split"
+            android:text="@string/address_receiver_code_nc" />
+
+        <EditText
+            android:id="@+id/et_address_client_code"
+            style="@style/Common_editText_he"
+            android:inputType="number"
+            android:layout_width="0dip"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Common_ll_mw_h"
+        android:padding="@dimen/common_margin" >
+
+        <TextView
+            style="@style/Common_textView_style"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/common_margin_split"
+            android:text="@string/address_receiver_mobile_nc" />
+
+        <EditText
+            android:id="@+id/et_address_client_phone"
+            style="@style/Common_editText_he"
+            android:inputType="phone"
+            android:layout_width="0dip"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Common_ll_mw_h"
+        android:padding="@dimen/common_margin" >
+
+        <TextView
+            style="@style/Common_textView_style"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/common_margin_split"
+            android:text="@string/address_receiver_area_nc" />
+
+        <RelativeLayout
+            android:id="@+id/rl_address_client_area"
+            style="@style/Common_editText_he"
+            android:layout_width="0dip"
+            android:layout_weight="2.5" >
+
+            <TextView
+                android:id="@+id/tv_address_client_area"
+                style="@style/Common_textView_style"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_margin"
+                android:src="@drawable/input_selectable"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Common_ll_mw_h"
+        android:padding="@dimen/common_margin" >
+
+        <TextView
+            style="@style/Common_textView_style"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin_split"
+            android:text="@string/address_receiver_adddesc_nc" />
+
+        <EditText
+            android:id="@+id/et_address_client_adddesc"
+            style="@style/Common_editText_he"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:minLines="3" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haoyikuai.shop.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.market" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity android:name="com.market.AddressModificationActivity" >
+        </activity>
+        <activity android:name="com.market.QrCodeScanActivity" >
+        </activity>
+        <activity android:name="com.market.FeedBackActivity" >
+        </activity>
+        <activity android:name="com.market.OrderListActivity" >
+        </activity>
+        <activity android:name="com.market.AboutUsActivity" >
+        </activity>
+        <activity android:name="com.market.CouponListActivity" >
+        </activity>
+        <activity android:name="com.market.SubCategoryActivity" >
+        </activity>
+        <activity android:name="com.market.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.market.MainActivity" >
+        </activity>
+        <activity android:name="com.market.LogoActivity" >
+        </activity>
+        <activity android:name="com.market.AddressAreaPickedActivity" >
+        </activity>
+        <activity android:name="com.market.AddressListActivity" >
+        </activity>
+        <activity android:name="com.market.RegistActivity" >
+        </activity>
+        <activity android:name="com.market.VFPasswordResetActivity" >
+        </activity>
+        <activity android:name="com.market.FogotPasswordActivity" >
+        </activity>
+        <activity android:name="com.market.VFChooseActivity" >
+        </activity>
+        <activity android:name="com.market.VFMobileActivity" >
+        </activity>
+        <activity android:name="com.market.OrderEdittingActivity" >
+        </activity>
+        <activity android:name="com.market.OrderOverviewActivity" >
+        </activity>
+        <activity android:name="com.market.VoucherListActivity" >
+        </activity>
+        <activity android:name="com.market.GoodsDetailWebViewActivity" >
+        </activity>
+        <activity android:name="com.market.GoodsOverviewActivity"></activity>
+        <activity android:name="com.market.VoucherChoosedActivity"></activity>
+        <activity android:name="com.market.GoodsPurchasedListActivity"></activity>
+        <activity android:name="com.market.PaymentChosenActivity"></activity>
+        <activity android:name="com.market.GoodsinOrderActivity"></activity>
+  		<activity android:name="com.market.OrderLogActivity"></activity>
+        <activity android:name="com.market.MyFocusActivity"></activity>
+        <activity android:name="com.market.RefundListActivity"></activity>
+        <activity android:name="com.market.RefundDetailActivity"></activity>
+        <activity android:name="com.market.GoodsCommentActivity"></activity>
+        <activity android:name="com.market.OrderGoodsCommentActivity"></activity>
+        <activity android:name="com.market.OrderCommentListActivity"></activity>
+   </application>
+
+</manifest>

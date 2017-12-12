@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common_switch_fnb"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_markaddressisdefault"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/good_addresslist_itemhegiht"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_addressisdefault"
+            style="@style/Common_lm_ww"
+            android:src="@drawable/deselect" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_addressinfo"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/good_addresslist_itemhegiht"
+        android:padding="@dimen/common_margin"
+        android:layout_weight="5" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_itemaddressname"
+                style="@style/Common_textView_style"
+                android:text="afdasd" />
+
+            <TextView
+                android:id="@+id/tv_itemaddressmoblie"
+                style="@style/Common_textView_style"
+                android:layout_alignParentRight="true"
+                android:text="afdasd" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_itemaddressdesc"
+            style="@style/Common_textView_style"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"
+            android:text="afdasd" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_markaddressiscreated"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/good_addresslist_itemhegiht"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_addressisdefault_tail"
+            style="@style/Common_lm_ww"
+            android:src="@drawable/godetail" />
+    </LinearLayout>
+
+</LinearLayout>
